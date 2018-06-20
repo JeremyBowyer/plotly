@@ -190,7 +190,7 @@ animation_button_create <- function(opts = animation_opts_defaults()) {
     pad = list(t = 60, r = 5),
     # https://github.com/plotly/plotly.js/issues/1221#issuecomment-264870980
     buttons = list(list(
-      label = 'Play',
+      label = 'Test',
       method = 'animate',
       args = list(NULL, modify_list(list(fromcurrent = TRUE, mode = "immediate"), opts))
     ))
