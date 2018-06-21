@@ -189,11 +189,13 @@ animation_button_create <- function(opts = animation_opts_defaults()) {
     xanchor = 'right',
     pad = list(t = 60, r = 5),
     # https://github.com/plotly/plotly.js/issues/1221#issuecomment-264870980
-    buttons = list(list(
-      label = 'Test',
-      method = 'animate',
-      args = list(NULL, modify_list(list(fromcurrent = TRUE, mode = "immediate"), opts))
-    ))
+    buttons = list(
+      list(label = 'TestPlay',
+           method = 'animate',
+           args = list(NULL, modify_list(list(fromcurrent = TRUE, mode = "immediate"), opts))),
+      list(label = "Speed",
+           method = 'animate',
+           args = list(NULL, modify_list(list(frame = 200, transition = 200), opts))))
   )
   structure(button, class = "aniButton")
 }
