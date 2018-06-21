@@ -195,7 +195,7 @@ animation_button_create <- function(opts = animation_opts_defaults()) {
            args = list(NULL, modify_list(list(fromcurrent = TRUE, mode = "immediate"), opts))),
       list(label = "Pause",
            method = 'animate',
-           args = list(NULL, modify_list(list(transition = list(duration = 0), frame = list(redraw = TRUE, duration = 0)), opts))))
+           args = list(NULL, modify_list(list(transition = list(duration = 0), frame = list(redraw = FALSE, duration = 0)), opts))))
   )
   structure(button, class = "aniButton")
 }
